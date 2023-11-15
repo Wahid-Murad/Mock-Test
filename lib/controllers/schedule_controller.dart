@@ -7,4 +7,8 @@ class ScheduleController extends GetxController {
   final Rx<DateTime> selectAppointmentTime = Rx<DateTime>(DateTime.now());
   final RxString appoinmentTime = RxString("");
   final TextEditingController subjectController = TextEditingController();
+  final TextEditingController nameController = TextEditingController();
+  final TextEditingController phoneEmailController = TextEditingController();
+  final RxBool isNameEditIconClicked = RxBool(false);
+  final RxBool isCheckBoxChecked = RxBool(false);
 }

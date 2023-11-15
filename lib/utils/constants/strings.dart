@@ -56,6 +56,10 @@ const String ksAppointmentTime = 'Appointment Time';
 const String ksSelectDate = 'Please select appointment date';
 const String ksSelectTime = 'Please select appointment time';
 const String ksSubject = 'Subject';
+const String ksName = 'Name';
+const String ksPhoneOrEmail = 'Phone Number / Email';
+const String ksCvOrResume = 'Upload CV / Resume';
+
 
 
 
