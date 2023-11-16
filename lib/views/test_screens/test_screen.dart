@@ -55,19 +55,12 @@ class TestScreen extends StatelessWidget {
                         padding: const EdgeInsets.only(bottom: k5Padding),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(k10BorderRadius),
-                          child: TextButton(
-                            style: kTextButtonStyle,
-                            onPressed: () async {
-                              // ll(index);
-                             
-                            },
-                            child: CustomListItems(
-                              backgroundImage: AssetImage(item['image']),
-                              itemTitle: item['title'],
-                              subTittle1: item['examTime'],
-                              subTittle2: item['rating'],
-                              priceWidget: PriceWidgetContainer(price: item['price'], isDiscountAvailable: true, priceWithoutDiscount: ks990Tk),
-                            ),
+                          child: CustomListItems(
+                            backgroundImage: AssetImage(item['image']),
+                            itemTitle: item['title'],
+                            subTittle1: item['examTime'],
+                            subTittle2: item['rating'],
+                            priceWidget: PriceWidgetContainer(price: item['price'], isDiscountAvailable: true, priceWithoutDiscount: ks990Tk),
                           ),
                         ),
                       );
@@ -101,23 +94,19 @@ class TestScreen extends StatelessWidget {
                         padding: const EdgeInsets.only(bottom: k5Padding),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(k10BorderRadius),
-                          child: TextButton(
-                            style: kTextButtonStyle,
-                            onPressed: () async {},
-                            child: CustomListItems(
-                              freeOrPaidWidget: CustomElevatedButton(
-                                label: item['examType'],
-                                onPressed: () {},
-                                buttonColor: item['examType'].toString() == "Free" ? cGreenColor : cRedOrangeColor,
-                                buttonWidth: h32,
-                                buttonHeight: h20,
-                                textStyle: p12MediumTextStyle(cWhiteColor),
-                              ),
-                              itemTitle: item['title'],
-                              subTittle1: item['examMarks'],
-                              subTittle2: item['examTime'],
-                              subTittle3: item['examQuestionNumber'],
+                          child: CustomListItems(
+                            freeOrPaidWidget: CustomElevatedButton(
+                              label: item['examType'],
+                              onPressed: () {},
+                              buttonColor: item['examType'].toString() == "Free" ? cGreenColor : cRedOrangeColor,
+                              buttonWidth: h32,
+                              buttonHeight: h20,
+                              textStyle: p12MediumTextStyle(cWhiteColor),
                             ),
+                            itemTitle: item['title'],
+                            subTittle1: item['examMarks'],
+                            subTittle2: item['examTime'],
+                            subTittle3: item['examQuestionNumber'],
                           ),
                         ),
                       );

@@ -14,7 +14,7 @@ class PriceWidgetContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return isDiscountAvailable
         ? Container(
-            width: h50,
+            width: h60,
             height: h16,
             decoration: BoxDecoration(
               color: cGreenColor,
